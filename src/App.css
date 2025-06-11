@@ -1,0 +1,257 @@
+
+h1{
+  color: rgb(62, 161, 62);
+font-size: 3rem;
+
+}
+body{
+  text-align: center;
+  direction: rtl;
+  line-height: 1;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+*{
+  box-sizing: border-box;
+
+}
+header{
+  background-color: blanchedalmond;
+  color:grey;
+}
+/* .img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  vertical-align: middle;
+  max-width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+    width: 100%;
+background-repeat: no-repeat;
+background-image: url("../public/photos/backgroundDark.png");
+/* background-position: center; 
+background-size: contain;
+  } 
+
+.img .search{
+  justify-self: center;
+  position: relative;
+  top: 7rem;
+  display: flex;
+  opacity: 70%;
+border:solid 1px;
+height: 3rem;
+border-radius: 6%;
+} */
+/* .img h1{
+  position: relative;
+  top: 7rem;
+} */
+/* .img .search button{
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #4d9f34;
+  width: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  cursor: pointer;
+} */
+/* nav */
+#addRecipy{
+  display: flex;
+  flex-direction: row;
+  border:solid black 1px;
+}
+#mainNav {
+  background-color: #4d9f34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 5rem;
+  width: 100%;
+  
+
+}
+#mainNav a{
+    color: rgb(217, 211, 156);
+    text-decoration: none;
+    align-self: center;
+
+}
+#mainNav a:hover{
+    color: rgb(196, 196, 196);
+    text-decoration: underline 1px;
+  }
+
+
+/* דף טופס */
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email],input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  display: none;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #009118ee;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin{
+  padding: 4rem;
+}
+
+.carousel-inner{
+
+  width:99%;
+  max-width:1100px;
+  height: 500px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+
+.pic{
+ position: relative;
+ top: 0;
+ right: 0;
+ left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+#recipeCardsList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  list-style: none;
+
+}
+
+
+
+.card-body{
+  min-width: 250px;
+  min-height: 200px;
+ justify-content: center;
+ align-content: center;
+}
+.card-body p{
+  font-size: 4rem;
+}
+#homeOptions {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+
+#homeOptions {
+  display: flex;
+  flex-direction: row;
+}
+
+
+}
+
+/*  */
+
+form{
+  max-width: 550px;
+  align-self: center;
+  justify-self: center;
+}
+/* 
+ */
+ .container .catigoryNav{
+    top: var(--MuiDocs-header-height);
+    margin-top: var(--MuiDocs-header-height);
+    padding-left: 6px;
+    position: -webkit-sticky;
+    position: sticky;
+    height: calc(100vh - var(--MuiDocs-header-height));
+    overflow-y: auto;
+    padding-top: 32px;
+    padding-bottom: 56px;
+    padding-right: 32px;
+    /* display: none; */
+    scrollbar-width: thin;
+ }
+ .container{
+  display: flex;
+ }
+ .container .page{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.container button {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.container li button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
